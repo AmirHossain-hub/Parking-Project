@@ -5,6 +5,10 @@
 *.bak
 *.mdf
 *.ldf
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 
 # Configuration files with secrets
 appsettings.*.json
@@ -18,3 +22,11 @@ appsettings.Development.json
 # IDE files
 .vs/
 *.user
+/packages/
+
+*.log
+
+*.tmp
+*.bak
+
+publish/
