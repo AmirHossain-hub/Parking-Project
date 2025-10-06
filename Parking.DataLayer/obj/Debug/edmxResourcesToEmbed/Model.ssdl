@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Parking_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CarInformation">
+    <Key>
+      <PropertyRef Name="NumberPlate" />
+    </Key>
+    <Property Name="NumberPlate" Type="nvarchar" MaxLength="50" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VehicleType" Type="nvarchar" MaxLength="64" Nullable="false" />
+    <Property Name="EntryDate" Type="date" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Parking_DB.dbo.GeneralInformation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GeneralInformation">
+    <Key>
+      <PropertyRef Name="FullName" />
+      <PropertyRef Name="PhoneNumber" />
+      <PropertyRef Name="NumberPlate" />
+      <PropertyRef Name="VehicleType" />
+      <PropertyRef Name="EntryDate" />
+    </Key>
+    <Property Name="FullName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNumber" Type="int" Nullable="false" />
+    <Property Name="NumberPlate" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="VehicleType" Type="nvarchar" MaxLength="64" Nullable="false" />
+    <Property Name="EntryDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OwnerInformation">
+    <Key>
+      <PropertyRef Name="FullName" />
+    </Key>
+    <Property Name="FullName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNumber" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Parking_DBModelStoreContainer">
+    <EntitySet Name="CarInformation" EntityType="Self.CarInformation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OwnerInformation" EntityType="Self.OwnerInformation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GeneralInformation" EntityType="Self.GeneralInformation" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GeneralInformation].[FullName] AS [FullName], 
+    [GeneralInformation].[PhoneNumber] AS [PhoneNumber], 
+    [GeneralInformation].[NumberPlate] AS [NumberPlate], 
+    [GeneralInformation].[VehicleType] AS [VehicleType], 
+    [GeneralInformation].[EntryDate] AS [EntryDate]
+    FROM [dbo].[GeneralInformation] AS [GeneralInformation]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

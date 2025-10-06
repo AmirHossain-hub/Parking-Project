@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Parking_DBModelStoreContainer" CdmEntityContainer="Parking_DBEntities3">
+    <EntitySetMapping Name="CarInformations">
+      <EntityTypeMapping TypeName="Parking_DBModel.CarInformation">
+        <MappingFragment StoreEntitySet="CarInformation">
+          <ScalarProperty Name="Fee" ColumnName="Fee" />
+          <ScalarProperty Name="ExitDate" ColumnName="ExitDate" />
+          <ScalarProperty Name="CarSituation" ColumnName="CarSituation" />
+          <ScalarProperty Name="NumberPlate" ColumnName="NumberPlate" />
+          <ScalarProperty Name="VehicleType" ColumnName="VehicleType" />
+          <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OwnerInformations">
+      <EntityTypeMapping TypeName="Parking_DBModel.OwnerInformation">
+        <MappingFragment StoreEntitySet="OwnerInformation">
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeneralInformations">
+      <EntityTypeMapping TypeName="Parking_DBModel.GeneralInformation">
+        <MappingFragment StoreEntitySet="GeneralInformation">
+          <ScalarProperty Name="Fee" ColumnName="Fee" />
+          <ScalarProperty Name="ExitDate" ColumnName="ExitDate" />
+          <ScalarProperty Name="CarSituation" ColumnName="CarSituation" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="NumberPlate" ColumnName="NumberPlate" />
+          <ScalarProperty Name="VehicleType" ColumnName="VehicleType" />
+          <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

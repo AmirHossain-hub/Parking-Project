@@ -1,0 +1,11 @@
+C:\Users\AMIR\Desktop\Parking Project\Parking Project\obj\Debug\Parking.App.csprojAssemblyReference.cache
+C:\Users\AMIR\Desktop\Parking Project\Parking Project\obj\Debug\Parking_Project.MainForm.resources
+C:\Users\AMIR\Desktop\Parking Project\Parking Project\obj\Debug\Parking_Project.Price.resources
+C:\Users\AMIR\Desktop\Parking Project\Parking Project\obj\Debug\Parking.App.csproj.GenerateResource.cache
+C:\Users\AMIR\Desktop\Parking Project\Parking Project\obj\Debug\Parking.App.csproj.CoreCompileInputs.cache
+C:\Users\AMIR\Desktop\Parking Project\Parking Project\bin\Debug\Parking Project.exe.config
+C:\Users\AMIR\Desktop\Parking Project\Parking Project\bin\Debug\Parking Project.exe
+C:\Users\AMIR\Desktop\Parking Project\Parking Project\bin\Debug\Parking Project.pdb
+C:\Users\AMIR\Desktop\Parking Project\Parking Project\obj\Debug\Parking_Project.Properties.Resources.resources
+C:\Users\AMIR\Desktop\Parking Project\Parking Project\obj\Debug\Parking Project.exe
+C:\Users\AMIR\Desktop\Parking Project\Parking Project\obj\Debug\Parking Project.pdb

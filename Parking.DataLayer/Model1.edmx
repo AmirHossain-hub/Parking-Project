@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Parking_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CarInformation">
+          <Key>
+            <PropertyRef Name="NumberPlate" />
+          </Key>
+          <Property Name="NumberPlate" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="VehicleType" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="EntryDate" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="CarSituation" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ExitDate" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="Fee" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GeneralInformation">
+          <Key>
+            <PropertyRef Name="FullName" />
+          </Key>
+          <Property Name="FullName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PhoneNumber" Type="nvarchar" MaxLength="11" Nullable="false" />
+          <Property Name="NumberPlate" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="VehicleType" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="EntryDate" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="CarSituation" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ExitDate" Type="datetime2" Precision="7" />
+          <Property Name="Fee" Type="decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="OwnerInformation">
+          <Key>
+            <PropertyRef Name="FullName" />
+          </Key>
+          <Property Name="FullName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PhoneNumber" Type="nvarchar" MaxLength="11" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Parking_DBModelStoreContainer">
+          <EntitySet Name="CarInformation" EntityType="Self.CarInformation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GeneralInformation" EntityType="Self.GeneralInformation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OwnerInformation" EntityType="Self.OwnerInformation" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Parking_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CarInformation">
+          <Key>
+            <PropertyRef Name="NumberPlate" />
+          </Key>
+          <Property Name="NumberPlate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VehicleType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="EntryDate" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="CarSituation" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="ExitDate" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="Fee" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="OwnerInformation">
+          <Key>
+            <PropertyRef Name="FullName" />
+          </Key>
+          <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GeneralInformation">
+          <Key>
+            <PropertyRef Name="FullName" />
+            <!--<PropertyRef Name="PhoneNumber" />
+            <PropertyRef Name="NumberPlate" />
+            <PropertyRef Name="VehicleType" />
+            <PropertyRef Name="EntryDate" />
+            <PropertyRef Name="CarSituation" />-->
+          </Key>
+          <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NumberPlate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VehicleType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="EntryDate" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="CarSituation" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="ExitDate" Type="DateTime" Precision="7" />
+          <Property Name="Fee" Type="Decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityContainer Name="Parking_DBEntities3" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CarInformations" EntityType="Self.CarInformation" />
+          <EntitySet Name="OwnerInformations" EntityType="Self.OwnerInformation" />
+          <EntitySet Name="GeneralInformations" EntityType="Self.GeneralInformation" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Parking_DBModelStoreContainer" CdmEntityContainer="Parking_DBEntities3">
+          <EntitySetMapping Name="CarInformations">
+            <EntityTypeMapping TypeName="Parking_DBModel.CarInformation">
+              <MappingFragment StoreEntitySet="CarInformation">
+                <ScalarProperty Name="Fee" ColumnName="Fee" />
+                <ScalarProperty Name="ExitDate" ColumnName="ExitDate" />
+                <ScalarProperty Name="CarSituation" ColumnName="CarSituation" />
+                <ScalarProperty Name="NumberPlate" ColumnName="NumberPlate" />
+                <ScalarProperty Name="VehicleType" ColumnName="VehicleType" />
+                <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OwnerInformations">
+            <EntityTypeMapping TypeName="Parking_DBModel.OwnerInformation">
+              <MappingFragment StoreEntitySet="OwnerInformation">
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GeneralInformations">
+            <EntityTypeMapping TypeName="Parking_DBModel.GeneralInformation">
+              <MappingFragment StoreEntitySet="GeneralInformation">
+                <ScalarProperty Name="Fee" ColumnName="Fee" />
+                <ScalarProperty Name="ExitDate" ColumnName="ExitDate" />
+                <ScalarProperty Name="CarSituation" ColumnName="CarSituation" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="NumberPlate" ColumnName="NumberPlate" />
+                <ScalarProperty Name="VehicleType" ColumnName="VehicleType" />
+                <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

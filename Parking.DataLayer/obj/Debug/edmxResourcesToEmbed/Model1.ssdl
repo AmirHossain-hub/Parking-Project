@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Parking_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CarInformation">
+    <Key>
+      <PropertyRef Name="NumberPlate" />
+    </Key>
+    <Property Name="NumberPlate" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="VehicleType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EntryDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="CarSituation" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="ExitDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Fee" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GeneralInformation">
+    <Key>
+      <PropertyRef Name="FullName" />
+    </Key>
+    <Property Name="FullName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="11" Nullable="false" />
+    <Property Name="NumberPlate" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="VehicleType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EntryDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="CarSituation" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="ExitDate" Type="datetime2" Precision="7" />
+    <Property Name="Fee" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="OwnerInformation">
+    <Key>
+      <PropertyRef Name="FullName" />
+    </Key>
+    <Property Name="FullName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="11" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Parking_DBModelStoreContainer">
+    <EntitySet Name="CarInformation" EntityType="Self.CarInformation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GeneralInformation" EntityType="Self.GeneralInformation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OwnerInformation" EntityType="Self.OwnerInformation" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

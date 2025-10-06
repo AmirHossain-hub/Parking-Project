@@ -1,0 +1,96 @@
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\Parking.App.exe.config
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\Parking.App.exe
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\Parking.App.pdb
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\obj\Debug\Parking_Project.MainForm.resources
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\obj\Debug\Parking.App.Properties.Resources.resources
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\obj\Debug\Parking.App.csproj.GenerateResource.cache
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\obj\Debug\Parking.App.csproj.CoreCompileInputs.cache
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\obj\Debug\Parking.App.exe
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\obj\Debug\Parking.App.pdb
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\obj\Debug\Parking.App.frmExitCar.resources
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\obj\Debug\Parking.App.EntryandExit.frmEntryNewCar.resources
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\obj\Debug\Parking.App.frmPrice.resources
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\obj\Debug\Parking.App.csprojAssemblyReference.cache
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\Parking.DataLayer.exe
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\EntityFramework.dll
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\Parking.DataLayer.pdb
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\Parking.DataLayer.exe.config
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\EntityFramework.xml
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\obj\Debug\Parking.App.csproj.CopyComplete
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\Parking.Utility.exe
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\Parking.Utility.pdb
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\Parking.Utility.exe.config
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\Parking.ViewModels.exe
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\Parking.ViewModels.pdb
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\Parking.ViewModels.exe.config
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\Parking.Business.dll
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\Parking.Business.pdb
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\bin\Debug\Parking.Business.dll.config
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\obj\Debug\Parking.App.frmSituation.resources
+C:\Users\AMIR\Desktop\Parking Project\Parking.App\obj\Debug\Parking.App.frmReport.resources
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\Parking.App.exe.config
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\Parking.App.exe
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\Parking.App.pdb
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\EntityFramework.dll
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\Parking.Business.dll
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\Parking.DataLayer.exe
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\Parking.Utility.exe
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\Parking.ViewModels.exe
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\Parking.Business.pdb
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\Parking.Business.dll.config
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\Parking.DataLayer.pdb
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\Parking.DataLayer.exe.config
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\Parking.Utility.pdb
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\Parking.Utility.exe.config
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\Parking.ViewModels.pdb
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\Parking.ViewModels.exe.config
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\EntityFramework.xml
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\obj\Debug\Parking.App.csprojAssemblyReference.cache
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\obj\Debug\Parking.App.EntryandExit.frmEntryNewCar.resources
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\obj\Debug\Parking.App.frmExitCar.resources
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\obj\Debug\Parking.App.frmPrice.resources
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\obj\Debug\Parking.App.frmReport.resources
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\obj\Debug\Parking.App.frmSituation.resources
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\obj\Debug\Parking_Project.MainForm.resources
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\obj\Debug\Parking.App.Properties.Resources.resources
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\obj\Debug\Parking.App.csproj.GenerateResource.cache
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\obj\Debug\Parking.App.csproj.CoreCompileInputs.cache
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\obj\Debug\Parking.App.csproj.CopyComplete
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\obj\Debug\Parking.App.exe
+C:\Users\AMIR\Desktop\Programming\C#\Parking Project - Copy\Parking.App\obj\Debug\Parking.App.pdb
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\Parking.App.exe.config
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\Parking.App.exe
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\Parking.App.pdb
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\EntityFramework.dll
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\Parking.Business.dll
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\Parking.DataLayer.exe
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\Parking.Utility.exe
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\Parking.ViewModels.exe
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\Parking.Business.pdb
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\Parking.Business.dll.config
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\Parking.DataLayer.pdb
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\Parking.DataLayer.exe.config
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\Parking.Utility.pdb
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\Parking.Utility.exe.config
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\Parking.ViewModels.pdb
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\Parking.ViewModels.exe.config
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\EntityFramework.xml
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\obj\Debug\Parking.App.csprojAssemblyReference.cache
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\obj\Debug\Parking.App.EntryandExit.frmEntryNewCar.resources
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\obj\Debug\Parking.App.frmExitCar.resources
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\obj\Debug\Parking.App.frmPrice.resources
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\obj\Debug\Parking.App.frmReport.resources
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\obj\Debug\Parking.App.frmSituation.resources
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\obj\Debug\Parking_Project.MainForm.resources
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\obj\Debug\Parking.App.Properties.Resources.resources
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\obj\Debug\Parking.App.csproj.GenerateResource.cache
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\obj\Debug\Parking.App.csproj.CoreCompileInputs.cache
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\obj\Debug\Parking.App.csproj.CopyComplete
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\obj\Debug\Parking.App.exe
+C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.App\obj\Debug\Parking.App.pdb

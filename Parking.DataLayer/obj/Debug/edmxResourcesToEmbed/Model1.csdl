@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Parking_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CarInformation">
+    <Key>
+      <PropertyRef Name="NumberPlate" />
+    </Key>
+    <Property Name="NumberPlate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VehicleType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EntryDate" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="CarSituation" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ExitDate" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Fee" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="OwnerInformation">
+    <Key>
+      <PropertyRef Name="FullName" />
+    </Key>
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GeneralInformation">
+    <Key>
+      <PropertyRef Name="FullName" />
+      <!--<PropertyRef Name="PhoneNumber" />
+            <PropertyRef Name="NumberPlate" />
+            <PropertyRef Name="VehicleType" />
+            <PropertyRef Name="EntryDate" />
+            <PropertyRef Name="CarSituation" />-->
+    </Key>
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NumberPlate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VehicleType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EntryDate" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="CarSituation" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ExitDate" Type="DateTime" Precision="7" />
+    <Property Name="Fee" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityContainer Name="Parking_DBEntities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CarInformations" EntityType="Self.CarInformation" />
+    <EntitySet Name="OwnerInformations" EntityType="Self.OwnerInformation" />
+    <EntitySet Name="GeneralInformations" EntityType="Self.GeneralInformation" />
+  </EntityContainer>
+</Schema>
