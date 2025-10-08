@@ -3,8 +3,6 @@
 *.mdf
 *.ldf
 *.bak
-*.mdf
-*.ldf
 *.user
 *.suo
 *.userosscache
@@ -25,9 +23,12 @@ appsettings.Development.json
 *.user
 /packages/
 
+# Logs
 *.log
 
+# Temporary files
 *.tmp
 *.bak
 
+# Publish output
 publish/
