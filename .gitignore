@@ -3,19 +3,8 @@
 *.mdf
 *.ldf
 *.bak
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
-*.sql
-
-# Visual Studio files
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
-.vs/
-/packages/
+*.mdf
+*.ldf
 
 # Configuration files with secrets
 appsettings.*.json
@@ -26,12 +15,6 @@ appsettings.Development.json
 .env
 *.env
 
-# Log files
-*.log
-
-# Temporary files
-*.tmp
-*.bak
-
-# Publish output
-publish/
+# IDE files
+.vs/
+*.user
