@@ -1,10 +1,21 @@
-# Database
+# Database files
 *.md
 *.mdf
 *.ldf
 *.bak
-*.mdf
-*.ldf
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.sql
+
+# Visual Studio files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+/packages/
 
 # Configuration files with secrets
 appsettings.*.json
@@ -15,6 +26,12 @@ appsettings.Development.json
 .env
 *.env
 
-# IDE files
-.vs/
-*.user
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Publish output
+publish/
