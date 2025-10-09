@@ -4,9 +4,8 @@ A simple C# project for managing parking slots, vehicles, and payments.
 
 ## 🧠 Features
 - Vehicle registration
-- Parking slot management
+- Report changes in system
 - Payment calculation
-- Admin dashboard
 
 ## 🛠️ Technologies
 - C#
