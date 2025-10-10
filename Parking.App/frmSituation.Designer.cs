@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.parking_DBDataSet = new Parking.App.Parking_DBDataSet();
-            this.generalInformationBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.generalInformationTableAdapter = new Parking.App.Parking_DBDataSetTableAdapters.GeneralInformationTableAdapter();
             this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numberPlateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,9 +38,12 @@
             this.carSituationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.exitDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.feeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.generalInformationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.parking_DBDataSet = new Parking.App.Parking_DBDataSet();
+            this.generalInformationTableAdapter = new Parking.App.Parking_DBDataSetTableAdapters.GeneralInformationTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parking_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.generalInformationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parking_DBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -68,56 +68,49 @@
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridView1.Size = new System.Drawing.Size(776, 426);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // parking_DBDataSet
-            // 
-            this.parking_DBDataSet.DataSetName = "Parking_DBDataSet";
-            this.parking_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // generalInformationBindingSource
-            // 
-            this.generalInformationBindingSource.DataMember = "GeneralInformation";
-            this.generalInformationBindingSource.DataSource = this.parking_DBDataSet;
-            // 
-            // generalInformationTableAdapter
-            // 
-            this.generalInformationTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // fullNameDataGridViewTextBoxColumn
             // 
             this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
             this.fullNameDataGridViewTextBoxColumn.HeaderText = "نام و نام خانوادگی";
             this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
+            this.fullNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // phoneNumberDataGridViewTextBoxColumn
             // 
             this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber";
             this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "تلفن همراه";
             this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
+            this.phoneNumberDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // numberPlateDataGridViewTextBoxColumn
             // 
             this.numberPlateDataGridViewTextBoxColumn.DataPropertyName = "NumberPlate";
             this.numberPlateDataGridViewTextBoxColumn.HeaderText = "شماره پلاک";
             this.numberPlateDataGridViewTextBoxColumn.Name = "numberPlateDataGridViewTextBoxColumn";
+            this.numberPlateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // vehicleTypeDataGridViewTextBoxColumn
             // 
             this.vehicleTypeDataGridViewTextBoxColumn.DataPropertyName = "VehicleType";
             this.vehicleTypeDataGridViewTextBoxColumn.HeaderText = "نوع خودرو";
             this.vehicleTypeDataGridViewTextBoxColumn.Name = "vehicleTypeDataGridViewTextBoxColumn";
+            this.vehicleTypeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // entryDateDataGridViewTextBoxColumn
             // 
             this.entryDateDataGridViewTextBoxColumn.DataPropertyName = "EntryDate";
             this.entryDateDataGridViewTextBoxColumn.HeaderText = "تاریخ ورودی";
             this.entryDateDataGridViewTextBoxColumn.Name = "entryDateDataGridViewTextBoxColumn";
+            this.entryDateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // carSituationDataGridViewTextBoxColumn
             // 
             this.carSituationDataGridViewTextBoxColumn.DataPropertyName = "CarSituation";
             this.carSituationDataGridViewTextBoxColumn.HeaderText = "وضعیت";
             this.carSituationDataGridViewTextBoxColumn.Name = "carSituationDataGridViewTextBoxColumn";
+            this.carSituationDataGridViewTextBoxColumn.ReadOnly = true;
             this.carSituationDataGridViewTextBoxColumn.Width = 80;
             // 
             // exitDateDataGridViewTextBoxColumn
@@ -125,12 +118,28 @@
             this.exitDateDataGridViewTextBoxColumn.DataPropertyName = "ExitDate";
             this.exitDateDataGridViewTextBoxColumn.HeaderText = "تاریخ خروجی";
             this.exitDateDataGridViewTextBoxColumn.Name = "exitDateDataGridViewTextBoxColumn";
+            this.exitDateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // feeDataGridViewTextBoxColumn
             // 
             this.feeDataGridViewTextBoxColumn.DataPropertyName = "Fee";
             this.feeDataGridViewTextBoxColumn.HeaderText = "هزینه";
             this.feeDataGridViewTextBoxColumn.Name = "feeDataGridViewTextBoxColumn";
+            this.feeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // generalInformationBindingSource
+            // 
+            this.generalInformationBindingSource.DataMember = "GeneralInformation";
+            this.generalInformationBindingSource.DataSource = this.parking_DBDataSet;
+            // 
+            // parking_DBDataSet
+            // 
+            this.parking_DBDataSet.DataSetName = "Parking_DBDataSet";
+            this.parking_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // generalInformationTableAdapter
+            // 
+            this.generalInformationTableAdapter.ClearBeforeFill = true;
             // 
             // frmSituation
             // 
@@ -142,8 +151,8 @@
             this.Text = "frmSituation";
             this.Load += new System.EventHandler(this.frmSituation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parking_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.generalInformationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parking_DBDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

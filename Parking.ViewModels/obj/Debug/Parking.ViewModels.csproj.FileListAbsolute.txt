@@ -37,3 +37,16 @@ C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.ViewModels\obj\Debug\Pa
 C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.ViewModels\obj\Debug\Parking.ViewModels.csproj.CopyComplete
 C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.ViewModels\obj\Debug\Parking.ViewModels.exe
 C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.ViewModels\obj\Debug\Parking.ViewModels.pdb
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.ViewModels\bin\Debug\Parking.ViewModels.exe.config
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.ViewModels\bin\Debug\Parking.ViewModels.exe
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.ViewModels\bin\Debug\Parking.ViewModels.pdb
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.ViewModels\bin\Debug\Parking.DataLayer.exe
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.ViewModels\bin\Debug\EntityFramework.dll
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.ViewModels\bin\Debug\Parking.DataLayer.pdb
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.ViewModels\bin\Debug\Parking.DataLayer.exe.config
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.ViewModels\bin\Debug\EntityFramework.xml
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.ViewModels\obj\Debug\Parking.ViewModels.csprojAssemblyReference.cache
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.ViewModels\obj\Debug\Parking.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.ViewModels\obj\Debug\Parking.ViewModels.csproj.CopyComplete
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.ViewModels\obj\Debug\Parking.ViewModels.exe
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.ViewModels\obj\Debug\Parking.ViewModels.pdb

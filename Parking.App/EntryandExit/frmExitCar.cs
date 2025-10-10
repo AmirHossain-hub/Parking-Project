@@ -32,6 +32,7 @@ namespace Parking.App
             _entryTime = general.EntryDate;
             _repository = new Repository(new Parking_DBEntities3());
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            _selectedNumberPlate = general.NumberPlate;
         }
        
         private void frmExitCar_Load(object sender, EventArgs e)
@@ -71,8 +72,7 @@ namespace Parking.App
             {
                 using (UnitofWork db = new UnitofWork())
                 {
-                    var vehicle = db.GenericRepository.GetAllInfo()
-                .FirstOrDefault(v => v.NumberPlate == txtNumberPlate.Text && v.ExitDate == null);
+                    var vehicle = db.GenericRepository.GetAllInfo().FirstOrDefault(v => v.NumberPlate == txtNumberPlate.Text);
 
                     if (vehicle == null)
                     {
@@ -167,32 +167,46 @@ namespace Parking.App
         {
            
         }
-
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+        }
         private void btnExit_Click(object sender, EventArgs e)
         {
             try
             {
-                using (var db = new UnitofWork())
+                using (UnitofWork db = new UnitofWork())
                 {
                     var vehicle = db.GenericRepository.GetAllInfo()
-                        .FirstOrDefault(v => v.NumberPlate == _selectedNumberPlate && v.ExitDate == null);
-                    
+                        .FirstOrDefault(v => v.NumberPlate == _selectedNumberPlate);
+
                     if (vehicle != null)
                     {
-                        GeneralInformation general = new GeneralInformation
-                        {
-                            CarSituation = "خروجی",
-                            Fee = _currentCost
-                        };
+                        // Update vehicle
+                        vehicle.CarSituation = "خروجی";
+                        vehicle.Fee = _currentCost;
                         vehicle.ExitDate = ExitDateTimePicker.Value;
-                        db.Save();
-                        DialogResult = DialogResult.OK;
-                        MessageBox.Show("خروج وسیله نقلیه با موفقیت ثبت شد", "موفقیت",
-                                      MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                         db.GenericRepository.Update(vehicle);
-                        this.Close();
+
+                        if (db.Save())
+                        {
+                            DialogResult = DialogResult.OK;
+                            MessageBox.Show("خروج وسیله نقلیه با موفقیت ثبت شد", "موفقیت",
+                                          MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("خطا در ذخیره اطلاعات در پایگاه داده", "خطا",
+                                          MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
-                  
+                    else
+                    {
+                        MessageBox.Show("وسیله نقلیه مورد نظر یافت نشد", "هشدار",
+                                      MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
             }
             catch (Exception ex)
@@ -223,9 +237,41 @@ namespace Parking.App
 
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void frmExitCar_Click(object sender, EventArgs e)
         {
-            
+
         }
+
+        //private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        //{
+        //    if (e.RowIndex >= 0) // Make sure a row is clicked, not header
+        //    {
+        //        DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+
+        //        // Get the NumberPlate from the selected row
+        //        _selectedNumberPlate = row.Cells["NumberPlate"].Value?.ToString();
+
+        //        // Also populate the text boxes with the selected vehicle's data
+        //        if (!string.IsNullOrEmpty(_selectedNumberPlate))
+        //        {
+        //            txtNumberPlate.Text = _selectedNumberPlate;
+
+        //            // Optionally load other details
+        //            using (UnitofWork db = new UnitofWork())
+        //            {
+        //                var vehicle = db.GenericRepository.GetAllInfo()
+        //                    .FirstOrDefault(v => v.NumberPlate == _selectedNumberPlate);
+
+        //                if (vehicle != null)
+        //                {
+        //                    txtOwnerName.Text = vehicle.FullName;
+        //                    // Set other fields as needed
+        //                }
+        //            }
+        //        }
+
+        //        MessageBox.Show($"شماره پلاک انتخاب شده: {_selectedNumberPlate}");
+        //    }
+        //}
     }
 }

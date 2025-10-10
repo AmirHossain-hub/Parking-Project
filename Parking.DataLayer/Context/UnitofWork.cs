@@ -54,11 +54,12 @@ namespace Parking.DataLayer.Context
             }
         }
 
-        public void Save()
+        public bool Save()
         {
             try
             {
-                db.SaveChanges();
+                int recordsAffected = db.SaveChanges();
+                return recordsAffected > 0; // Returns true if any records were saved
             }
             catch (System.Data.Entity.Validation.DbEntityValidationException ex)
             {
@@ -75,16 +76,19 @@ namespace Parking.DataLayer.Context
                 }
                 MessageBox.Show(errorMessage.ToString(),
                     "Validation Error",
-                    System.Windows.Forms.MessageBoxButtons.OK, 
-                    System.Windows.Forms.MessageBoxIcon.Error);
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+
+                return false; // Return false indicating save failed
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"An unexpected error occurred: {ex.Message}",
-                    "Error", 
-                    MessageBoxButtons.OK, 
+                    "Error",
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
-                throw; 
+
+                return false; // Return false indicating save failed
             }
         }
         public void Dispose()

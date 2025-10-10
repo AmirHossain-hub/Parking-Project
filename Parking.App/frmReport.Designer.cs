@@ -30,15 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.parking_DBDataSet1 = new Parking.App.Parking_DBDataSet1();
-            this.parkingDBDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.parking_DBDataSet2 = new Parking.App.Parking_DBDataSet2();
-            this.generalInformationBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.generalInformationTableAdapter = new Parking.App.Parking_DBDataSet2TableAdapters.GeneralInformationTableAdapter();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnFilter = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numberPlateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,13 +38,22 @@
             this.carSituationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.exitDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.feeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StartdateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.generalInformationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.parking_DBDataSet2 = new Parking.App.Parking_DBDataSet2();
+            this.parking_DBDataSet1 = new Parking.App.Parking_DBDataSet1();
+            this.parkingDBDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.generalInformationTableAdapter = new Parking.App.Parking_DBDataSet2TableAdapters.GeneralInformationTableAdapter();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.EnddateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.StartdateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.btnFilter = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.generalInformationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parking_DBDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parking_DBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingDBDataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parking_DBDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.generalInformationBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,73 +79,7 @@
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridView1.Size = new System.Drawing.Size(776, 426);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // parking_DBDataSet1
-            // 
-            this.parking_DBDataSet1.DataSetName = "Parking_DBDataSet1";
-            this.parking_DBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // parkingDBDataSet1BindingSource
-            // 
-            this.parkingDBDataSet1BindingSource.DataSource = this.parking_DBDataSet1;
-            this.parkingDBDataSet1BindingSource.Position = 0;
-            // 
-            // parking_DBDataSet2
-            // 
-            this.parking_DBDataSet2.DataSetName = "Parking_DBDataSet2";
-            this.parking_DBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // generalInformationBindingSource
-            // 
-            this.generalInformationBindingSource.DataMember = "GeneralInformation";
-            this.generalInformationBindingSource.DataSource = this.parking_DBDataSet2;
-            // 
-            // generalInformationTableAdapter
-            // 
-            this.generalInformationTableAdapter.ClearBeforeFill = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.EnddateTimePicker);
-            this.groupBox1.Controls.Add(this.StartdateTimePicker);
-            this.groupBox1.Controls.Add(this.btnFilter);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 29);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(776, 59);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "جستجو";
-            // 
-            // btnFilter
-            // 
-            this.btnFilter.Location = new System.Drawing.Point(28, 24);
-            this.btnFilter.Name = "btnFilter";
-            this.btnFilter.Size = new System.Drawing.Size(75, 23);
-            this.btnFilter.TabIndex = 6;
-            this.btnFilter.Text = "انجام";
-            this.btnFilter.UseVisualStyleBackColor = true;
-            this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(372, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "تا تاریخ :";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(673, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "از تاریخ :";
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // fullNameDataGridViewTextBoxColumn
             // 
@@ -205,6 +139,52 @@
             this.feeDataGridViewTextBoxColumn.Name = "feeDataGridViewTextBoxColumn";
             this.feeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // generalInformationBindingSource
+            // 
+            this.generalInformationBindingSource.DataMember = "GeneralInformation";
+            this.generalInformationBindingSource.DataSource = this.parking_DBDataSet2;
+            // 
+            // parking_DBDataSet2
+            // 
+            this.parking_DBDataSet2.DataSetName = "Parking_DBDataSet2";
+            this.parking_DBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // parking_DBDataSet1
+            // 
+            this.parking_DBDataSet1.DataSetName = "Parking_DBDataSet1";
+            this.parking_DBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // parkingDBDataSet1BindingSource
+            // 
+            this.parkingDBDataSet1BindingSource.DataSource = this.parking_DBDataSet1;
+            this.parkingDBDataSet1BindingSource.Position = 0;
+            // 
+            // generalInformationTableAdapter
+            // 
+            this.generalInformationTableAdapter.ClearBeforeFill = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.EnddateTimePicker);
+            this.groupBox1.Controls.Add(this.StartdateTimePicker);
+            this.groupBox1.Controls.Add(this.btnFilter);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(12, 29);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(776, 59);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "جستجو";
+            // 
+            // EnddateTimePicker
+            // 
+            this.EnddateTimePicker.Location = new System.Drawing.Point(166, 26);
+            this.EnddateTimePicker.Name = "EnddateTimePicker";
+            this.EnddateTimePicker.Size = new System.Drawing.Size(200, 21);
+            this.EnddateTimePicker.TabIndex = 7;
+            // 
             // StartdateTimePicker
             // 
             this.StartdateTimePicker.Location = new System.Drawing.Point(467, 26);
@@ -213,12 +193,33 @@
             this.StartdateTimePicker.TabIndex = 4;
             this.StartdateTimePicker.ValueChanged += new System.EventHandler(this.StartdateTimePicker_ValueChanged);
             // 
-            // EnddateTimePicker
+            // btnFilter
             // 
-            this.EnddateTimePicker.Location = new System.Drawing.Point(166, 26);
-            this.EnddateTimePicker.Name = "EnddateTimePicker";
-            this.EnddateTimePicker.Size = new System.Drawing.Size(200, 21);
-            this.EnddateTimePicker.TabIndex = 7;
+            this.btnFilter.Location = new System.Drawing.Point(28, 24);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.Size = new System.Drawing.Size(75, 23);
+            this.btnFilter.TabIndex = 6;
+            this.btnFilter.Text = "انجام";
+            this.btnFilter.UseVisualStyleBackColor = true;
+            this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(372, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "تا تاریخ :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(673, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "از تاریخ :";
             // 
             // frmReport
             // 
@@ -233,10 +234,10 @@
             this.Text = "frmReport";
             this.Load += new System.EventHandler(this.frmReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.generalInformationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parking_DBDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parking_DBDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingDBDataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parking_DBDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.generalInformationBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

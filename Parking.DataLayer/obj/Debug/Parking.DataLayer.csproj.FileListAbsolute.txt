@@ -34,3 +34,15 @@ C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.DataLayer\obj\Debug\Par
 C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.DataLayer\obj\Debug\Parking.DataLayer.csproj.CopyComplete
 C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.DataLayer\obj\Debug\Parking.DataLayer.exe
 C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.DataLayer\obj\Debug\Parking.DataLayer.pdb
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.DataLayer\bin\Debug\Parking.DataLayer.exe.config
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.DataLayer\bin\Debug\Parking.DataLayer.exe
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.DataLayer\bin\Debug\Parking.DataLayer.pdb
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.DataLayer\obj\Debug\Parking.DataLayer.csprojAssemblyReference.cache
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.DataLayer\obj\Debug\Parking.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.DataLayer\obj\Debug\Parking.DataLayer.csproj.CopyComplete
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.DataLayer\obj\Debug\Parking.DataLayer.exe
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.DataLayer\obj\Debug\Parking.DataLayer.pdb

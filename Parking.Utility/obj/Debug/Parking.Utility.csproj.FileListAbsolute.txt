@@ -18,3 +18,10 @@ C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.Utility\bin\Debug\Parki
 C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.Utility\obj\Debug\Parking.Utility.csproj.CoreCompileInputs.cache
 C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.Utility\obj\Debug\Parking.Utility.exe
 C:\Users\AMIR\Desktop\Resome\MVC\Parking Project\Parking.Utility\obj\Debug\Parking.Utility.pdb
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.Utility\bin\Debug\Parking.Utility.exe.config
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.Utility\bin\Debug\Parking.Utility.exe
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.Utility\bin\Debug\Parking.Utility.pdb
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.Utility\obj\Debug\Parking.Utility.csproj.CoreCompileInputs.cache
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.Utility\obj\Debug\Parking.Utility.exe
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.Utility\obj\Debug\Parking.Utility.pdb
+C:\Users\AMIR\Desktop\Resome\MVC\Parking_Project\Parking.Utility\obj\Debug\Parking.Utility.csprojAssemblyReference.cache
